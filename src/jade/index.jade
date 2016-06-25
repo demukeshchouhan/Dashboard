@@ -1,0 +1,393 @@
+doctype
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+html(lang="eng")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    title Kraftly DashBoard
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+    //- link(rel="stylesheet" href="css/bootstrap.css")
+    link(rel="stylesheet" href="css/main.css")
+    
+    
+  body
+    
+    
+  
+    header
+      div.container-fluid
+        div.row
+          div.col-sm-12
+            nav.navigation_fixed
+              div.db_logo.col-xs-3  
+                img.img-responsive.img-circle.logo_icon(src="http://image.flaticon.com/icons/svg/129/129501.svg")
+                h4 Coffee Restaurant
+                
+              div.db_user_notification.col-xs-9
+                ul.c_pull_right.notification_navigation_panel
+                
+                  li.navigation_list.menu_toggle(data-toggle="modal" data-target="#mobile_navigation")
+                    span.glyphicon.glyphicon-option-vertical
+                  li.navigation_list
+                    a.user_profile_btn.order_cart_btn(data-toggle="modal" data-target="#order_modal_window")
+                      span.glyphicon.glyphicon-shopping-cart.order_cart
+                      span.badge 8
+                      // modal window open link
+                  li.navigation_list.dropdown
+                    a.user_profile_btn.dropdown-toggle(data-toggle="dropdown")
+                      span Shady Mukesh  
+                      img.img-responsive.img-circle(src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFBi6nBSbd17yf8KHnNKrOMEeyHBpIPP-oNvceZiVfbo1OdoHOBQ" alt="txt")
+                      span.caret
+                    ul.dropdown-menu
+                      li: a Profile
+                      li: a dashboard
+                      li: a order
+                      li.divider
+                      li: a Logout
+    aside
+      div.container-fluid
+        div.row
+        
+          div.col-sm-1.aside_navigation_panel
+            ul.aside_navigation
+              li 
+                img.img-responsive.logo_icon(src="http://image.flaticon.com/icons/svg/129/129501.svg")
+              li
+                a 
+                  span.glyphicon.glyphicon-stats
+                  span.nav_icon_toggle Analytics
+              li
+                a 
+                  span.glyphicon.glyphicon-sound-dolby 
+                  span.nav_icon_toggle Interface
+              li
+                a 
+                  span.glyphicon.glyphicon-eye-open
+                  span.nav_icon_toggle App Views
+              li
+                a 
+                  span.glyphicon.glyphicon-list-alt
+                  span.nav_icon_toggle Charts
+              li
+                a 
+                  span.glyphicon.glyphicon-earphone
+                  span.nav_icon_toggle Contact us
+              li
+                a 
+                  span.glyphicon.glyphicon-refresh
+                  span.nav_icon_toggle Social stats
+              li
+                a 
+                  span.glyphicon.glyphicon-modal-window  
+                  span.nav_icon_toggle Widgets
+                  
+                  
+              
+    
+              
+          div.col-sm-11.db_white_panel
+            div.row
+              div.col-sm-12
+                ol.breadcrumb
+                  li: a(href="#0") Home
+                  li: a(href="#0") Navigation
+                  li.active Dashboard
+            
+            div.row
+              div.col-sm-12.info_panels
+              
+                div.row
+                
+                  div.col-sm-6.col-md-3
+                    div.panel.panel-default
+                      div.panel-heading
+                        div.btn-group
+                          a.btn.btn-primary(href="#0" data-toggle="modal" data-target="#new_order_modal") New Order
+                          a.btn.btn-warning(href="#0" data-toggle="modal" data-target="#order_modal_window") Check Order
+                          
+                      div.panel-body
+                        span.task_name ABCDEF
+                      div.panel-footer
+                        div.progress
+                          div.progress-bar.progress-bar-success(style="width:70%")
+
+                    
+                  div.col-sm-6.col-md-3
+                    div.panel.panel-default
+                      div.panel-heading
+                        h3.task_number 145,457
+                          span.task_icon.pull-right 
+                            img.img-responsive(src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFBi6nBSbd17yf8KHnNKrOMEeyHBpIPP-oNvceZiVfbo1OdoHOBQ")
+                      div.panel-body
+                        span.task_name ABCDEF
+                      div.panel-footer
+                        div.progress
+                          div.progress-bar.progress-bar-warning(style="width:40%")
+                  
+                  div.col-sm-6.col-md-3
+                    div.panel.panel-default
+                      div.panel-heading
+                        h3.task_number 145,457
+                          span.task_icon.pull-right 
+                            img.img-responsive(src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFBi6nBSbd17yf8KHnNKrOMEeyHBpIPP-oNvceZiVfbo1OdoHOBQ")
+                      div.panel-body
+                        span.task_name ABCDEF
+                      div.panel-footer
+                        div.progress
+                          div.progress-bar.progress-bar-danger(style="width:10%")
+                          
+                  
+                  div.col-sm-6.col-md-3
+                    div.panel.panel-default
+                      div.panel-heading
+                        h3.task_number 145,457
+                          span.task_icon.pull-right 
+                            img.img-responsive(src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFBi6nBSbd17yf8KHnNKrOMEeyHBpIPP-oNvceZiVfbo1OdoHOBQ")
+                      div.panel-body
+                        span.task_name ABCDEF
+                      div.panel-footer
+                        div.progress
+                          div.progress-bar.progress-bar-primary(style="width:50%")
+              
+            
+            div.row
+              section.db_canvas_panel
+                div.col-sm-12
+                  div.row
+                  
+                    div.col-sm-3
+                      div.panel.panel-default
+                          div.panel-heading
+                            span.glyphicon.glyphicon-signal
+                            h2  $1 206,90
+                            h4 All Income
+                          div.panel-body
+                            p
+                             | Lorem ipsum dolor sit amet, consectetur.
+                             
+                    div.col-sm-3
+                      div.panel.panel-default
+                          div.panel-heading
+                            span.glyphicon.glyphicon-share-alt.pull-right
+                            h2  210
+                            h4 Social users
+                            div.progress
+                              div.progress-bar.progress-bar-primary(style="width:50%")
+                            div.page_visit
+                              span: strong Pages / Visit -
+                              span  7.80% 
+                              <br/>
+                              span: strong New Visits -
+                              span  76.43%
+                          div.panel-body
+                            p
+                             | Lorem ipsum dolor sit amet, consectetur.
+                             
+                             
+                    div.col-sm-3
+                      div.panel.panel-default
+                              div.panel-heading
+                                span.glyphicon.glyphicon-flag.pull-right
+                                h2  $653,000
+                                h4  Monthly revenue goal
+                                p 
+                                  | Social users 
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+                                  | Lorem Ipsum has been.
+                              div.panel-body
+                                p
+                                 | Lorem ipsum dolor sit amet, consectetur. 
+                                 
+                    div.col-sm-3
+                      div.panel.panel-default
+                                div.panel-heading
+                                  span.glyphicon.glyphicon-eye-open.pull-right
+                                  h2  860k
+                                  h4  PAGE VIEWS
+                                  p 
+                                    | Social users 
+                                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+                                    | Lorem Ipsum has been.
+                                div.panel-body
+                                  p
+                                   | Lorem ipsum dolor sit amet, consectetur.
+                                   
+                      
+                  div.row
+                    div.col-sm-12.col-md-6
+                      table.table.table-responsive.table-striped
+                        thead
+                          tr
+                            th projects
+                            th
+                            th Completed
+                            th Task
+                            th Date
+                            th Action
+                            
+                        tbody
+                          tr
+                            td
+                              input.c_checkbox(type="checkbox" id="check1")
+                              label(for="check1")
+                              span
+                            td Contract with Zender Company 
+                            td completed
+                            td 20%
+                            td june 20, 2016
+                            td done !
+                          tr
+                            td
+                              input.c_checkbox(type="checkbox" id="check2")
+                              label(for="check2")
+                              span
+                            td There are many variations of passages 
+                            td completed
+                            td 20%
+                            td june 20, 2016
+                            td done !
+                          tr
+                            td
+                              input.c_checkbox(type="checkbox" id="check3")
+                              label(for="check3")
+                              span
+                            td Contrary to popular belief 
+                            td completed
+                            td 20%
+                            td june 20, 2016
+                            td done !
+                          tr
+                            td
+                              input.c_checkbox(type="checkbox" id="check4")
+                              label(for="check4")
+                              span
+                            td Gamma project 
+                            td completed
+                            td 20%
+                            td june 20, 2016
+                            td done !
+                            
+                      div.row
+                        div.col-sm-12
+                          div.panel.panel-default
+                              div.panel-heading
+                                h2  $1 206,90
+                                canvas#order_detail_form(width="600" height="200")
+                              div.panel-body
+                                p
+                                 | Lorem ipsum dolor sit amet, consectetur.                     
+                  
+                  
+                            
+                          
+                    div.col-sm-12.col-md-6.traffic_chart
+                      div.panel.panel-default
+                        div.panel-heading
+                          h2  Monthly Traffic
+                        div.panel-body
+                          canvas#seller_detail_form(width="600" height="430")
+           
+             div.row
+              div.col-sm-12
+                footer.footer
+                    p 2015 © Kraftly 2016.  
+    
+  
+  
+    // cart modal
+    div.modal.fade#order_modal_window(tabindex="-1")
+      div.modal-dialog
+        div.modal-content
+          div.modal-header
+            button.close(type="button" data-dismiss="modal")
+              span &times;
+            h3.modal-title Order List:
+            span.pull-right.modal_window_timer
+          div.modal-body
+            form.form-horizontal
+              div.form-group 
+                  div.col-sm-8
+                    label.control-label(for="order_number") Please enter your Amount of item:  
+                  div.col-sm-4
+                    input.form-control#order_number(type="number" min="1" max="10")
+          div.modal-footer
+            button.btn.btn-default.btn-block(type="button") Continue
+            
+    // new order
+    div.modal.fade#new_order_modal(tabindex="-1")
+      div.modal-dialog
+        div.modal-content
+          div.modal-header
+            button.close(type="button" data-dismiss="modal")
+              span &times;
+            h3.modal-title Book New Order:
+            span.pull-right.modal_window_timer
+          div.modal-body
+            form.form-horizontal
+              div.form-group 
+                  div.col-sm-8
+                    label.control-label(for="order_number") Please Confirm Your Booking:  
+                  div.col-sm-4
+                    input.form-control#order_number(type="number" min="1" max="10")
+          div.modal-footer
+            button.btn.btn-default.btn-block(type="button") Buy
+            
+            
+    // naviagtion form
+    div.modal.fade#mobile_navigation.active(tabindex="-1")
+      div.modal-dialog
+        div.modal-content
+          div.modal-header
+            button.close(type="button" data-dismiss="modal")
+              span &times;
+            h3.modal-title 
+          div.modal-body
+            ul.mobile_navigation_menu
+              // li 
+              //   img.img-responsive.logo_icon(src="http://image.flaticon.com/icons/svg/129/129501.svg")
+              li
+                a 
+                  span.glyphicon.glyphicon-stats
+                  span.nav_icon_toggle Analytics
+              li
+                a 
+                  span.glyphicon.glyphicon-sound-dolby 
+                  span.nav_icon_toggle Interface
+              li
+                a 
+                  span.glyphicon.glyphicon-eye-open
+                  span.nav_icon_toggle App Views
+              li
+                a 
+                  span.glyphicon.glyphicon-list-alt
+                  span.nav_icon_toggle Charts
+              li
+                a 
+                  span.glyphicon.glyphicon-earphone
+                  span.nav_icon_toggle Contact us
+              li
+                a 
+                  span.glyphicon.glyphicon-refresh
+                  span.nav_icon_toggle Social stats
+              li
+                a 
+                  span.glyphicon.glyphicon-modal-window  
+                  span.nav_icon_toggle Widgets
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+    script(src="js/bootstrap.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js")
+    script(src="js/main.js")
+  

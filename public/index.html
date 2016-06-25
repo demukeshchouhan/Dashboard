@@ -1,0 +1,370 @@
+<!DOCTYPE html><!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Kraftly DashBoard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <nav class="navigation_fixed">
+              <div class="db_logo col-xs-3"> <img src="http://image.flaticon.com/icons/svg/129/129501.svg" class="img-responsive img-circle logo_icon">
+                <h4>Coffee Restaurant</h4>
+              </div>
+              <div class="db_user_notification col-xs-9">
+                <ul class="c_pull_right notification_navigation_panel">
+                  <li data-toggle="modal" data-target="#mobile_navigation" class="navigation_list menu_toggle"><span class="glyphicon glyphicon-option-vertical"></span></li>
+                  <li class="navigation_list"><a data-toggle="modal" data-target="#order_modal_window" class="user_profile_btn order_cart_btn"><span class="glyphicon glyphicon-shopping-cart order_cart"></span><span class="badge">8</span>
+                      <!-- modal window open link--></a></li>
+                  <li class="navigation_list dropdown"><a data-toggle="dropdown" class="user_profile_btn dropdown-toggle"><span>Shady Mukesh  </span><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFBi6nBSbd17yf8KHnNKrOMEeyHBpIPP-oNvceZiVfbo1OdoHOBQ" alt="txt" class="img-responsive img-circle"><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a>Profile</a></li>
+                      <li><a>dashboard</a></li>
+                      <li><a>order</a></li>
+                      <li class="divider"></li>
+                      <li><a>Logout</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <aside>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-1 aside_navigation_panel">
+            <ul class="aside_navigation">
+              <li> <img src="http://image.flaticon.com/icons/svg/129/129501.svg" class="img-responsive logo_icon"></li>
+              <li><a> <span class="glyphicon glyphicon-stats"></span><span class="nav_icon_toggle">Analytics</span></a></li>
+              <li><a> <span class="glyphicon glyphicon-sound-dolby"> </span><span class="nav_icon_toggle">Interface</span></a></li>
+              <li><a> <span class="glyphicon glyphicon-eye-open"></span><span class="nav_icon_toggle">App Views</span></a></li>
+              <li><a> <span class="glyphicon glyphicon-list-alt"></span><span class="nav_icon_toggle">Charts</span></a></li>
+              <li><a> <span class="glyphicon glyphicon-earphone"></span><span class="nav_icon_toggle">Contact us</span></a></li>
+              <li><a> <span class="glyphicon glyphicon-refresh"></span><span class="nav_icon_toggle">Social stats</span></a></li>
+              <li><a> <span class="glyphicon glyphicon-modal-window"> </span><span class="nav_icon_toggle">Widgets</span></a></li>
+            </ul>
+          </div>
+          <div class="col-sm-11 db_white_panel">
+            <div class="row">
+              <div class="col-sm-12">
+                <ol class="breadcrumb">
+                  <li><a href="#0">Home</a></li>
+                  <li><a href="#0">Navigation</a></li>
+                  <li class="active">Dashboard</li>
+                </ol>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 info_panels">
+                <div class="row">
+                  <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <div class="btn-group"><a href="#0" data-toggle="modal" data-target="#new_order_modal" class="btn btn-primary">New Order</a><a href="#0" data-toggle="modal" data-target="#order_modal_window" class="btn btn-warning">Check Order</a></div>
+                      </div>
+                      <div class="panel-body"><span class="task_name">ABCDEF</span></div>
+                      <div class="panel-footer">
+                        <div class="progress">
+                          <div style="width:70%" class="progress-bar progress-bar-success"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="task_number">145,457<span class="task_icon pull-right"> <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFBi6nBSbd17yf8KHnNKrOMEeyHBpIPP-oNvceZiVfbo1OdoHOBQ" class="img-responsive"></span></h3>
+                      </div>
+                      <div class="panel-body"><span class="task_name">ABCDEF</span></div>
+                      <div class="panel-footer">
+                        <div class="progress">
+                          <div style="width:40%" class="progress-bar progress-bar-warning"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="task_number">145,457<span class="task_icon pull-right"> <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFBi6nBSbd17yf8KHnNKrOMEeyHBpIPP-oNvceZiVfbo1OdoHOBQ" class="img-responsive"></span></h3>
+                      </div>
+                      <div class="panel-body"><span class="task_name">ABCDEF</span></div>
+                      <div class="panel-footer">
+                        <div class="progress">
+                          <div style="width:10%" class="progress-bar progress-bar-danger"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="task_number">145,457<span class="task_icon pull-right"> <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFBi6nBSbd17yf8KHnNKrOMEeyHBpIPP-oNvceZiVfbo1OdoHOBQ" class="img-responsive"></span></h3>
+                      </div>
+                      <div class="panel-body"><span class="task_name">ABCDEF</span></div>
+                      <div class="panel-footer">
+                        <div class="progress">
+                          <div style="width:50%" class="progress-bar progress-bar-primary"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <section class="db_canvas_panel">
+                <div class="col-sm-12">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <div class="panel panel-default">
+                        <div class="panel-heading"><span class="glyphicon glyphicon-signal"></span>
+                          <h2> $1 206,90</h2>
+                          <h4>All Income</h4>
+                        </div>
+                        <div class="panel-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="panel panel-default">
+                        <div class="panel-heading"><span class="glyphicon glyphicon-share-alt pull-right"></span>
+                          <h2> 210</h2>
+                          <h4>Social users</h4>
+                          <div class="progress">
+                            <div style="width:50%" class="progress-bar progress-bar-primary"></div>
+                          </div>
+                          <div class="page_visit"><span><strong>Pages / Visit -</strong></span><span> 7.80% </span><br/><span><strong>New Visits -</strong></span><span> 76.43%</span></div>
+                        </div>
+                        <div class="panel-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="panel panel-default">
+                        <div class="panel-heading"><span class="glyphicon glyphicon-flag pull-right"></span>
+                          <h2> $653,000</h2>
+                          <h4> Monthly revenue goal</h4>
+                          <p>
+                             
+                            Social users 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+                            Lorem Ipsum has been.
+                          </p>
+                        </div>
+                        <div class="panel-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="panel panel-default">
+                        <div class="panel-heading"><span class="glyphicon glyphicon-eye-open pull-right"></span>
+                          <h2> 860k</h2>
+                          <h4> PAGE VIEWS</h4>
+                          <p>
+                             
+                            Social users 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+                            Lorem Ipsum has been.
+                          </p>
+                        </div>
+                        <div class="panel-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <table class="table table-responsive table-striped">
+                        <thead>
+                          <tr>
+                            <th>projects</th>
+                            <th></th>
+                            <th>Completed</th>
+                            <th>Task</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <input type="checkbox" id="check1" class="c_checkbox">
+                              <label for="check1"></label><span></span>
+                            </td>
+                            <td>Contract with Zender Company </td>
+                            <td>completed</td>
+                            <td>20%</td>
+                            <td>june 20, 2016</td>
+                            <td>done !</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <input type="checkbox" id="check2" class="c_checkbox">
+                              <label for="check2"></label><span></span>
+                            </td>
+                            <td>There are many variations of passages </td>
+                            <td>completed</td>
+                            <td>20%</td>
+                            <td>june 20, 2016</td>
+                            <td>done !</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <input type="checkbox" id="check3" class="c_checkbox">
+                              <label for="check3"></label><span></span>
+                            </td>
+                            <td>Contrary to popular belief </td>
+                            <td>completed</td>
+                            <td>20%</td>
+                            <td>june 20, 2016</td>
+                            <td>done !</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <input type="checkbox" id="check4" class="c_checkbox">
+                              <label for="check4"></label><span></span>
+                            </td>
+                            <td>Gamma project </td>
+                            <td>completed</td>
+                            <td>20%</td>
+                            <td>june 20, 2016</td>
+                            <td>done !</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h2> $1 206,90</h2>
+                              <canvas id="order_detail_form" width="600" height="200"></canvas>
+                            </div>
+                            <div class="panel-body">
+                              <p>Lorem ipsum dolor sit amet, consectetur.                     </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 traffic_chart">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h2> Monthly Traffic</h2>
+                        </div>
+                        <div class="panel-body">
+                          <canvas id="seller_detail_form" width="600" height="430"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <footer class="footer">
+                  <p>2015 © Kraftly 2016.  </p>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- cart modal-->
+    <div id="order_modal_window" tabindex="-1" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" class="close"><span>&times;</span></button>
+            <h3 class="modal-title">Order List:</h3><span class="pull-right modal_window_timer"></span>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group"> 
+                <div class="col-sm-8">
+                  <label for="order_number" class="control-label">Please enter your Amount of item:  </label>
+                </div>
+                <div class="col-sm-4">
+                  <input id="order_number" type="number" min="1" max="10" class="form-control">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-block">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- new order-->
+    <div id="new_order_modal" tabindex="-1" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" class="close"><span>&times;</span></button>
+            <h3 class="modal-title">Book New Order:</h3><span class="pull-right modal_window_timer"></span>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group"> 
+                <div class="col-sm-8">
+                  <label for="order_number" class="control-label">Please Confirm Your Booking:  </label>
+                </div>
+                <div class="col-sm-4">
+                  <input id="order_number" type="number" min="1" max="10" class="form-control">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-block">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- naviagtion form-->
+    <div id="mobile_navigation" tabindex="-1" class="modal fade active">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" class="close"><span>&times;</span></button>
+            <h3 class="modal-title"> </h3>
+          </div>
+          <div class="modal-body">
+            <ul class="mobile_navigation_menu">
+              <!-- li -->
+              <!--   img.img-responsive.logo_icon(src="http://image.flaticon.com/icons/svg/129/129501.svg")-->
+              <li><a> <span class="glyphicon glyphicon-stats"></span><span class="nav_icon_toggle">Analytics</span></a></li>
+              <li><a> <span class="glyphicon glyphicon-sound-dolby"> </span><span class="nav_icon_toggle">Interface</span></a></li>
+              <li><a> <span class="glyphicon glyphicon-eye-open"></span><span class="nav_icon_toggle">App Views</span></a></li>
+              <li><a> <span class="glyphicon glyphicon-list-alt"></span><span class="nav_icon_toggle">Charts</span></a></li>
+              <li><a> <span class="glyphicon glyphicon-earphone"></span><span class="nav_icon_toggle">Contact us</span></a></li>
+              <li><a> <span class="glyphicon glyphicon-refresh"></span><span class="nav_icon_toggle">Social stats</span></a></li>
+              <li><a> <span class="glyphicon glyphicon-modal-window"> </span><span class="nav_icon_toggle">Widgets</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script><script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
